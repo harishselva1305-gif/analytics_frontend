@@ -46,6 +46,18 @@
       "destination": "https://analytics-backend-1-4i7z.onrender.com/login/"
     },
     {
+      "source": "/customer/dashboard/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/customer/dashboard/"
+    },
+    {
+      "source": "/customer/login/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/customer/login/"
+    },
+    {
+      "source": "/admin/dashboard/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/admin/dashboard/"
+    },
+    {
       "source": "/customer/:path*",
       "destination": "https://analytics-backend-1-4i7z.onrender.com/customer/:path*"
     },
