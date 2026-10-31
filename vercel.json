@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/api/csrf/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/csrf/"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://analytics-backend-1-4i7z.onrender.com/api/:path*"
     },
