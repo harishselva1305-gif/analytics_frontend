@@ -1,12 +1,11 @@
 # MediSafe AI Frontend
 
-The root `index.html` is the public landing page. Vercel rewrites send API, login, customer, and admin requests to the Django backend at `https://analyticsbackend.vercel.app` while keeping the browser on this frontend domain.
+The root `index.html` is the public landing page. Vercel rewrites send API, login, customer, and admin requests to the Django backend at `https://analytics-backend-1-4i7z.onrender.com` while keeping the browser on this frontend domain.
 
 ## Vercel setup
 
-1. Import the `analytics_backend` GitHub repository as a separate Vercel project and name the project `analyticsbackend` so its production URL matches the rewrite target.
-2. Set the backend project's Root Directory to the repository root and keep the Django framework preset.
-3. Add `DJANGO_SECRET_KEY` for Production and Preview. Set `DJANGO_DEBUG=0` for Production. Redeploy the backend and confirm its production URL responds before testing login or API features.
-4. Deploy this repository as a static frontend project with its repository root as the Root Directory.
+1. Deploy the `analytics_backend` repository as a Render Web Service from branch `main`, with the repository root as Root Directory.
+2. Set the Render variables `DJANGO_SECRET_KEY` and `DJANGO_DEBUG=0`. The backend reads its Render hostname automatically and trusts this frontend's origin for CSRF.
+3. Deploy this repository to Vercel as a static frontend project with its repository root as Root Directory. Its `vercel.json` proxies API and account routes to the Render service.
 
-The backend trusts `https://analyticsfrontend.vercel.app` for CSRF requests from this frontend. Add any preview or custom frontend origins to `DJANGO_CSRF_TRUSTED_ORIGINS` in the backend project's environment variables.
+The backend trusts `https://analyticsfrontend.vercel.app` for CSRF requests from this frontend. Add any preview or custom frontend origins to `DJANGO_CSRF_TRUSTED_ORIGINS` in Render's service Environment settings.
