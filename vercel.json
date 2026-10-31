@@ -6,6 +6,38 @@
       "destination": "https://analytics-backend-1-4i7z.onrender.com/api/csrf/"
     },
     {
+      "source": "/api/login/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/login/"
+    },
+    {
+      "source": "/api/register/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/register/"
+    },
+    {
+      "source": "/api/logout/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/logout/"
+    },
+    {
+      "source": "/api/me/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/me/"
+    },
+    {
+      "source": "/api/analytics/:path*",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/analytics/:path*"
+    },
+    {
+      "source": "/api/reports/:path*",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/reports/:path*"
+    },
+    {
+      "source": "/api/medicines/:path*",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/medicines/:path*"
+    },
+    {
+      "source": "/api/ai/:path*",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/ai/:path*"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://analytics-backend-1-4i7z.onrender.com/api/:path*"
     },
