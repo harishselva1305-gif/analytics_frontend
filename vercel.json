@@ -22,6 +22,46 @@
       "destination": "https://analytics-backend-1-4i7z.onrender.com/api/me/"
     },
     {
+      "source": "/api/medicines/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/medicines/"
+    },
+    {
+      "source": "/api/reports/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/reports/"
+    },
+    {
+      "source": "/api/reports/export.csv",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/reports/export.csv"
+    },
+    {
+      "source": "/api/reports/:report_id/review/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/reports/:report_id/review/"
+    },
+    {
+      "source": "/api/reports/:report_id/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/reports/:report_id/"
+    },
+    {
+      "source": "/api/analytics/overview/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/analytics/overview/"
+    },
+    {
+      "source": "/api/analytics/monthly/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/analytics/monthly/"
+    },
+    {
+      "source": "/api/analytics/symptoms/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/analytics/symptoms/"
+    },
+    {
+      "source": "/api/analytics/medicines/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/analytics/medicines/"
+    },
+    {
+      "source": "/api/ai/classify/",
+      "destination": "https://analytics-backend-1-4i7z.onrender.com/api/ai/classify/"
+    },
+    {
       "source": "/api/analytics/:path*",
       "destination": "https://analytics-backend-1-4i7z.onrender.com/api/analytics/:path*"
     },
